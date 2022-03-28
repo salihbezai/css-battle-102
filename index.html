@@ -1,0 +1,137 @@
+<div class="container">
+  <div class="bone-right-top">
+    <div class="line-bone"></div>
+    <div class="curve-bone"></div>
+    <div class="curve-bone2"></div>
+  </div>
+  <div class="bone-right-bottom">
+    <div class="line-bone"></div>
+    <div class="curve-bone"></div>
+    <div class="curve-bone2"></div>
+  </div>
+
+  <div class="bone-left-top">
+    <div class="line-bone"></div>
+    <div class="curve-bone"></div>
+    <div class="curve-bone2"></div>
+  </div>
+  <div class="bone-left-bottom">
+    <div class="line-bone"></div>
+    <div class="curve-bone"></div>
+    <div class="curve-bone2"></div>
+  </div>
+
+  <div class="top-face">
+    <div class="left-eye"></div>
+    <div class="right-eye"></div>
+  </div>
+  <div class="bottom-face">
+    <div class="teeths">
+      <div class="teeth"></div>
+      <div class="teeth"></div>
+      <div class="teeth"></div>
+    </div>
+  </div>
+</div>
+<style>
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    width: 100vw;
+    height: 100vh;
+    background: #000000;
+    display: grid;
+    place-items: center;
+  }
+
+  .top-face {
+    width: 190px;
+    height: 100px;
+    border-radius: 70px;
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .left-eye {
+    width: 45px;
+    height: 50px;
+    border-radius: 30px;
+    background-color: black;
+    transform: rotate(45deg);
+    margin-right: 10px;
+  }
+  .right-eye {
+    width: 45px;
+    height: 50px;
+    border-radius: 30px;
+    background-color: black;
+    transform: rotate(-45deg);
+    margin-left: 10px;
+    position: relative;
+  }
+
+  .teeths {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .teeth {
+    width: 15px;
+    height: 20px;
+    margin: 10px 4px;
+    background-color: #ffffff;
+  }
+
+  .bone-right-top {
+    width: 200px;
+    height: 100px;
+    position: absolute;
+    transform: translate(172px, -14px) rotate(-1deg);
+  }
+  .bone-right-bottom {
+    width: 200px;
+    height: 100px;
+    position: absolute;
+    transform: translate(50px, 137px) rotate(90deg);
+  }
+  .bone-left-bottom {
+    width: 200px;
+    height: 100px;
+    position: absolute;
+    transform: translate(-185px, 10px) rotate(181deg);
+  }
+  .bone-left-top {
+    width: 200px;
+    height: 100px;
+    position: absolute;
+    transform: translate(-52px, -140px) rotate(-88deg);
+  }
+  .curve-bone {
+    position: absolute;
+    top: -14%;
+    left: 25px;
+    background-color: #fff;
+    height: 30px;
+    width: 30px;
+    border-radius: 200px;
+  }
+  .curve-bone2 {
+    position: absolute;
+    top: -30%;
+    right: 160px;
+    background-color: #fff;
+    height: 30px;
+    width: 30px;
+    border-radius: 200px;
+  }
+  .line-bone {
+    width: 30px;
+    height: 20px;
+    background-color: #ffffff;
+    transform: rotate(-45deg);
+  }
+</style>
